@@ -17,4 +17,15 @@
         android:layout_marginTop="20dp"
         android:text="我是onEvent触摸注解的按钮" />
 
+    <TextView
+        android:id="@+id/tv_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:minHeight="30dp"
+        android:text="TEST"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
 </LinearLayout>

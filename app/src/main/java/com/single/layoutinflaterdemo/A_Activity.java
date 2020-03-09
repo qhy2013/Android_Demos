@@ -7,6 +7,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.single.layoutinflaterdemo.apt.BinderViewTools;
 import com.single.layoutinflaterdemo.bus.EventBus;
@@ -16,12 +17,15 @@ import com.single.router_annimator.BindView;
 public class A_Activity extends AppCompatActivity {
     @BindView(R.id.button)
     public Button button;
+    @BindView(R.id.tv_test)
+    public TextView tvTest;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_a);
         BinderViewTools.init(this);
+        tvTest.setText("TEST NEW");
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
